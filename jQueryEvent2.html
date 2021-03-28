@@ -1,0 +1,32 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+<script>  
+$(document).ready(function(){  
+    $("#name").blur(function(){  
+        $("#name").css("background","red");  
+    });
+   $("#pass").blur(function(){  
+        $("#pass").css("background","pink");  
+    });  
+  
+
+});  
+</script>  
+</head>  
+<body>  
+<p>USER LOGIN</p>
+<table>
+<tr>
+<td>ENTER YOUR NAME   :</td><td><input type="text" id="name"></td>
+</tr>
+<tr>
+<td>ENTER THE PASSWORD:</td><td><input type="password" id="pass"></td>
+</tr>
+<tr>
+<td><button type="submit">Click Here</button></td>
+</tr>
+</table> 
+</body>  
+</html>  

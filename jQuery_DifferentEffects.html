@@ -1,0 +1,52 @@
+<!doctype html>
+<head>
+<title>jQuery tutorial</title>
+<script type="text/javascript" 
+src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+    // Hide displayed paragraphs with different speeds
+    $(".hide-btn").click(function(){
+        $("img.fast").hide("fast");
+        $("img.slow").hide("slow");
+        $("img.very-fast").hide(50);
+        $("img.very-slow").hide(2000);
+    });
+    
+    // Show hidden paragraphs with different speeds
+    $(".show-btn").click(function(){
+        $("img.fast").show("fast");
+        $("img.slow").show("slow");
+        $("img.very-fast").show(50);
+        $("img.very-slow").show(2000);
+    });
+   $(".toggle").click(function(){
+        $("img.fast").toggle("fast");
+        $("img.slow").toggle("slow");
+        $("img.very-fast").toggle(50);
+        $("img.very-slow").toggle(2000);
+    });
+});
+</script>
+</head>
+<body>
+<h1>FLAGS</h1>
+<button type="button" class="hide-btn">Hide Flags</button> 
+<button type="button" class="show-btn">Show Flags</button>
+<button type="button" class="toggle">Toggle</button>
+<p>
+<img src="CSKFlag.jpg" class="fast" width="100" height="75">
+</p>
+<p>
+<img src="KKRFlag.jpg" class="slow" width="100" height="75">
+</p>
+<p>
+<img src="RCBLogo.jpg" class="very-fast" width="100" height="75">
+</p>
+<p>
+<img src="MILogo.png" class="very-slow" width="100" height="75">
+</p>
+</body>
+</html>
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery parents() Demo</title>
+<style>
+    *{
+        margin: 10px;
+    }
+    .frame{
+        border: 2px solid green;
+    }  
+    .highlight{
+        background: yellow;
+    }              
+</style>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+   // $("li").parent().addClass("highlight");
+    //$("li").parents().addClass("frame");
+    //$("li").parents("div").addClass("frame");
+    //$("li").parentsUntil("html").addClass("frame");
+    $("ul").children().addClass("highlight");
+    //$("div").find("li").addClass("frame");
+    //$("div").find("*").addClass("frame");
+    //$("p").siblings().addClass("highlight");
+});
+</script>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello World</h1>
+        <p>This is a <em>simple paragraph</em>.</p>
+        <ul>
+            <li>Item One</li>
+            <li>Item Two</li>
+        </ul>
+    </div>
+</body>
+</html>

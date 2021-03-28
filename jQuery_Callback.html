@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of jQuery Effect Method without Callback Function</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    
+</style>
+<script>
+//$(document).ready(function(){
+  //  $("button").click(function(){
+    //    $("h1").slideToggle("slow");
+      //  alert("The slide toggle effect has completed.");
+    //});   
+//});
+$(document).ready(function(){
+  $("button").click(function(){
+        $("h1").slideToggle("slow",function(){
+        	alert("The slide toggle effect has completed.");
+	});
+    });   
+});
+</script>
+</head>
+<body>
+    <h1>jQuery Callback Function.</h1>
+    <button type="button">Click me</button>
+</body>
+</html>

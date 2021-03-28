@@ -1,0 +1,34 @@
+<!doctype html>
+<head>
+<title>jQuery tutorial</title>
+<script type="text/javascript" 
+src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#b1").click(function(){
+	$("ul").before("<h2>One of the great AUTHORS</h2>");
+	$("ul").after("<b>These are some of his works</b>");
+	alert($("li").text());
+	$("li:last").text("Othello");
+	$("li:last").html("<li>Macbeth</li>");
+	$("h1").css("background","pink");
+});
+ 
+});
+</script>
+</head>
+<body>
+<h1>SHAKESPERE</h1>
+<ul>
+<li>King Lear</li>
+<li>As you like it</li>
+<li>Taming of the shrew</li>
+</ul>
+<p>
+<button id="b1" type="button">Call jQuery Methods</button>
+</p>
+<p id="n1"></p>
+</body>
+</html>
+

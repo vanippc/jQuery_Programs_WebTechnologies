@@ -1,0 +1,27 @@
+<!doctype html>
+<head>
+<title>jQuery tutorial</title>
+<script type="text/javascript" 
+src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+</script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+//$("#c1").css("background","red");
+//$("p").css("background","green");
+//$(".demo").css("background","orange");
+//$('p[font="Arial"]').css("background","pink");
+//$("p.rep").css("background","grey");
+$("p:last").css("background","blue");
+});
+</script>
+</head>
+<body>
+<h1>LIST OF CANDIDATES</h1>
+<p id="c1" class="rep">DONALD TRUMP</p>
+<p class="rep">MIKE PENCE</p>
+<p class="demo" font="Arial">JOE BIDEN</p>
+<p class="demo">KAMALA HARRIS</p>
+</body>
+</html>
+

@@ -1,0 +1,34 @@
+<!doctype html>
+<head>
+<title>jQuery tutorial</title>
+<script type="text/javascript" 
+src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+    // Hide displayed paragraphs with different speeds
+    $(".SlideUp").click(function(){
+        $("img").slideUp();
+    });
+    
+    // Show hidden paragraphs with different speeds
+    $(".SlideDown").click(function(){
+        $("img").slideDown();
+    });
+   $(".toggle").click(function(){
+        $("img").slideToggle();
+    });
+});
+</script>
+</head>
+<body>
+<h1>PUPPIES</h1>
+<button type="button" class="SlideUp">SlideUp</button> 
+<button type="button" class="SlideDown">SlideDown</button>
+<button type="button" class="toggle">Toggle</button>
+<p>
+<img src="puppy4.png"  width="200" height="175">
+</p>
+</body>
+</html>
+
